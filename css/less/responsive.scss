@@ -115,9 +115,24 @@
 		     -o-transition: all .25s ease;
 		        transition: all .25s ease;
 	}
-	.navbar .wrapper .linkwd2:hover .links_active{
-		visibility: unset;
-		opacity: unset;
+	.navbar .wrapper .linkwd2:hover .dropdowns{
+		position: fixed;
+		top: 0;
+		z-index: 999;
+		background: #fff;
+		left: 0;
+		right: 0;
+		top: 0px;
+		bottom: 0;
+		border: 0;
+		padding: 0;
+		max-width: 350px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: auto;
+		box-shadow: unset;
+		visibility: hidden;
+		opacity: 0;
 	}
 	.navbar .wrapper .linkwd2 .links_active{
 		position: fixed;
@@ -135,8 +150,8 @@
 		padding-right: 10px;
 		margin: auto;
 		box-shadow: unset;
-		visibility: visible;
-		opacity: 1;
+		visibility: visible !important;
+		opacity: 1 !important;
 	}
 	.navbar .wrapper .navonphone {
 	    display: block;
