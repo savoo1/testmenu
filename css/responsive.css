@@ -85,14 +85,17 @@
     -ms-transition: all .25s ease;
     -o-transition: all .25s ease;
     transition: all .25s ease; }
-  .navbar .wrapper .linkwd2:hover .dropdowns {
+  .navbar .wrapper .linkwd2:hover .links_active {
+    visibility: unset;
+    opacity: unset; }
+  .navbar .wrapper .linkwd2 .links_active {
     position: fixed;
     top: 0;
     z-index: 999;
     background: #fff;
     left: 0;
     right: 0;
-    top: 70px;
+    top: 0px;
     bottom: 0;
     border: 0;
     padding: 0;
@@ -100,7 +103,9 @@
     padding-left: 10px;
     padding-right: 10px;
     margin: auto;
-    box-shadow: unset; }
+    box-shadow: unset;
+    visibility: visible;
+    opacity: 1; }
   .navbar .wrapper .navonphone {
     display: block;
     vertical-align: unset;
