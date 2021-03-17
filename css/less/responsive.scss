@@ -1,0 +1,311 @@
+@media(max-width: 1840px){
+	.navbar .wrapper .rightside{
+		right: 10px;
+	}
+}
+
+@media(max-width: 1670px){
+	.navbar .wrapper form{
+		max-width: 20rem;
+	}
+}
+
+@media(max-width: 1475px){
+	.navbar .wrapper form{
+		max-width: 20rem;
+	}
+	.navbar .wrapper .linkwd{
+		margin-left: 0;
+	}
+	.navbar .wrapper .linkwd .link{
+		padding-left: 0.25rem;
+		padding-right: 0.25rem;
+	}
+	.navbar .wrapper .linkwd2 .link{
+		margin-right: 0;
+	}
+	.navbar .wrapper form {
+	    max-width: 15rem;
+	    margin-left: 0;
+	}
+}
+@media(max-width: 1300px){
+	.navbar .wrapper .logo{
+		max-width: 210px;
+		margin-top: 18px;
+	}
+	.navbar .wrapper .linkwd .link, .navbar .wrapper .linkwd2 .link{
+		font-size: 12px;
+	}
+	.navbar .wrapper .rightside .login{
+		margin-right: 3px;
+		font-size: 12px;
+	}
+	.navbar .wrapper .rightside .createacc{
+		width: 160px;
+	}
+	.navbar .wrapper .linkwd2 .dropdowns{
+		left: -1.2rem;
+	}
+}
+
+@media(max-width: 1200px){
+	.navbar .wrapper .linkwd2 .dropdowns{
+		left: -1.7rem;
+	}
+	.navbar .wrapper .logo {
+	    max-width: 180px;
+	    margin-top: 20px;
+	}
+	.navbar .wrapper form {
+	    max-width: 11rem;
+	}
+	.navbar .wrapper .rightside .createacc {
+	    width: 140px;
+	    font-size: 11px;
+	}
+	.navbar .wrapper .rightside .login{
+		margin-right: 0;
+	}
+	.navbar .wrapper .linkwd2 .link{
+		padding-left: 0.25rem;
+		padding-right: 0.25rem;
+	}
+	.navbar .wrapper .linkwd{
+		margin-left: -10px;
+	}
+	.navbar .wrapper .rightside .login{
+		margin-right: -7px;
+	}
+	.navbar .wrapper .linkwd2 .link{
+		margin-right: -7px;
+	}
+	.navbar .wrapper form input{
+		padding-right: 2rem;
+		padding-left: 1rem;
+	}
+	.navbar .wrapper form button{
+		right: 15px;
+	}
+	.navbar .wrapper form {
+	    max-width: 9rem;
+	}
+}
+
+
+@media(max-width: 992px){
+	.navbar .wrapper .linkwd .linksval{
+		position: fixed;
+		top: 0;
+		z-index: 999;
+		background: #fff;
+		left: 0;
+		right: 0;
+		top: 70px;
+		bottom: 0;
+		border: 0;
+		padding: 0;
+		max-width: 350px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: auto;
+		-webkit-transition: all .25s ease;
+		   -moz-transition: all .25s ease;
+		    -ms-transition: all .25s ease;
+		     -o-transition: all .25s ease;
+		        transition: all .25s ease;
+	}
+	.navbar .wrapper .linkwd2:hover .dropdowns{
+		position: fixed;
+		top: 0;
+		z-index: 999;
+		background: #fff;
+		left: 0;
+		right: 0;
+		top: 70px;
+		bottom: 0;
+		border: 0;
+		padding: 0;
+		max-width: 350px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: auto;
+		box-shadow: unset;
+	}
+	.navbar .wrapper .navonphone {
+	    display: block;
+	    vertical-align: unset;
+	    width: 100%;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    background: #fff;	    
+	    overflow: auto;
+	    opacity: 0;
+	    visibility: hidden;
+	    -webkit-transition: all .25s ease;
+	       -moz-transition: all .25s ease;
+	        -ms-transition: all .25s ease;
+	         -o-transition: all .25s ease;
+	            transition: all .25s ease;
+	}
+	.navbar .wrapper .navonphone_active{
+		opacity: 1;
+		visibility: visible;
+	}
+	.navbar .wrapper .linkwd{
+		display: block;
+	}
+	.navbar .wrapper .linkwd .link{
+		display: none;
+	}
+	.navbar .wrapper .linkwd .dropdowns{
+		position: relative;
+		left: unset;
+		visibility: visible;
+		opacity: 1;
+
+		background: unset;
+		border: unset;
+		box-shadow: unset;
+		min-height: unset;
+		min-width: unset;
+		border-radius: unset;
+	}
+	.navbar .wrapper .rightside{
+		right: unset;
+		display: block;
+		position: relative;
+	}
+	.navbar{
+		min-height: 3.8rem;
+	}
+	.navbar .wrapper .logo{
+		max-width: 210px;
+		margin: auto;
+		display: block;
+		margin-top: 6px;
+	}
+	.navbar .wrapper .linkwd .leftside{
+		padding: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		max-width: 350px;
+		margin: auto;
+		display: block;
+		margin-top: 100px;
+	}
+	.navbar .wrapper form{
+		position: absolute;
+		top: 70px;
+		max-width: 350px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: auto;
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+	.navbar .wrapper .linkwd{
+		margin-left: 0;
+	}
+	.navbar .wrapper form input{
+		padding: 0.625rem;
+		padding-right: 2rem;
+		padding-left: 1rem;
+	}
+	.navbar .wrapper form button {
+	    right: 25px;
+	}
+	.navbar .wrapper .linkwd .leftside a svg{
+		right: 0px;
+	}
+	.navbar .wrapper .linkwd2 .link{
+		border: 0;
+		display: block;
+		padding: 0;
+		margin: auto;
+		border-top: 1px solid #C4C4C4;
+		line-height: 60px;
+		margin-top: 20px;
+		position: relative;
+		svg{
+			position: absolute;
+			right: 0px;
+			top: 23px;
+			margin: 0;
+			opacity: 0.7;
+		}
+	}
+
+	.navbar .wrapper .linkwd2 .link:hover{
+		background: transparent;
+		color: #007D95;
+			opacity: 1;
+		font-family: AvenirBlack;
+		svg{
+			opacity: 1;
+		}
+		.strokeh{
+			stroke: #007D95 !important;
+		}
+		.fillh{
+			fill: #007D95 !important;
+		}
+	}
+	.navbar .wrapper .rightside{
+		max-width: 350px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: auto;
+		display: block;
+	}
+	.navbar .wrapper .rightside .login{
+		margin: 0;
+		display: block;
+		margin: 0;
+		    display: block;
+		    line-height: 25px;
+		    padding: 0;
+	}
+	.navbar{
+		.forxicon{
+			max-width: 350px;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin: auto;
+			margin-top: 22px;
+		}
+	}
+	.navbar .wrapper .rightside .createacc{
+		margin: 0;
+		margin-top: 15px;
+		background: transparent;
+		text-align: left;
+		color: #007D95;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.navbar .wrapper .linkwd2{
+		display: block;
+		margin: auto;
+	}
+	.navbar .wrapper{
+		max-width: 350px;
+		.hambmenu{
+			position: absolute;
+			    top: 20px;
+		}
+		.searchicon{
+			position: absolute;
+			    top: 22px;
+			    right: 10px;
+		}
+	}
+}
+
+
+
+

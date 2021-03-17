@@ -1,0 +1,497 @@
+// fonts
+@font-face {
+  font-family: AvenirMedium;
+  src: url("../fonts/Avenir-Medium.ttf");
+}
+@font-face {
+  font-family: AvenirHeavy;
+  src: url("../fonts/Avenir-Heavy.ttf");
+}
+@font-face {
+  font-family: AvenirRoman;
+  src: url("../fonts/Avenir-Roman.ttf");
+}
+@font-face {
+  font-family: AvenirBlack;
+  src: url("../fonts/Avenir-Black.ttf");
+}
+// fonts end
+
+// def code
+html, body{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+p,h1,h2,h3,h4,h5{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+*{
+	box-sizing: border-box;
+}
+*:focus{
+	outline: none;
+}
+svg{
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.phone{
+	display: none;
+	@media(max-width: 992px){
+		display: block;
+	}
+}
+// def code end
+
+// navbar
+.navbar{
+	min-height: 4.5rem;
+	background: #fff;
+	box-shadow: 0px 7px 30px 12px rgba(0, 0, 0, 0.23);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	.wrapper{
+		max-width: 91.2rem;
+		margin: auto;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		position: relative;
+		.logo{
+			margin-top: 0.35rem;
+			-webkit-transition: all .25s ease;
+			   -moz-transition: all .25s ease;
+			    -ms-transition: all .25s ease;
+			     -o-transition: all .25s ease;
+			        transition: all .25s ease;
+		}
+		.logo:hover{
+			opacity: 0.7;
+		}
+		.navonphone{
+			display: inline-block;
+			    vertical-align: top;
+			    width: calc(100% - 300px);
+		}
+		.linkwd{
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			margin-left: 0.35rem;
+			.link{
+				display: inline-block;
+				line-height: 4.5rem;
+				font-family: AvenirHeavy;
+				letter-spacing: 1.6px;
+				text-transform: uppercase;
+				color: #535454;
+				font-size: 14px;
+				padding-top: 0.05rem;
+				padding-left: 0.75rem;
+				padding-right: 0.75rem;
+				border-left: 1px solid #fff;
+				border-right: 1px solid #fff;
+				-webkit-transition: all .25s ease;
+				   -moz-transition: all .25s ease;
+				    -ms-transition: all .25s ease;
+				     -o-transition: all .25s ease;
+				        transition: all .25s ease;
+				svg{
+					margin-right: 0.25rem;
+				}
+			}
+
+			.dropdowns{
+				background: #F8F8F8;
+				border: 1px solid #DCD7D2;
+				box-shadow: 0px 17px 15px 2px rgba(0, 0, 0, 0.25);
+				min-height: 21.4rem;
+				min-width: 21.4rem;
+				border-radius: 0px 0px 6px 6px;
+				position: absolute;
+				left: -5.6rem;
+				visibility: hidden;
+				opacity: 0;
+				-webkit-transition: visibility .25s ease;
+				   -moz-transition: visibility .25s ease;
+				    -ms-transition: visibility .25s ease;
+				     -o-transition: visibility .25s ease;
+				        transition: visibility .25s ease;
+			}
+			
+
+			.leftside{
+				display: inline-block;
+				vertical-align: top;
+				width: 100%;
+				max-width: 21.4rem;
+
+				
+				
+				padding: 1.8rem 2.1rem;
+
+				h2{
+					font-family: AvenirBlack;
+					font-size: 10px;
+					line-height: 14px;
+					letter-spacing: 0.6px;
+					text-transform: uppercase;
+					color: #535454;
+					margin-bottom: 16px;
+				}
+				a{
+					font-family: AvenirMedium;
+					display: block;
+					position: relative;
+					font-weight: 900;
+					font-size: 18px;
+					line-height: 30px;
+					letter-spacing: 0.6px;
+
+					color: #535454;
+					margin-top: 10px;
+
+					svg{
+						position: absolute;
+						right: 21px;
+						top: 12px;
+						opacity: 0.7;
+					}
+
+					-webkit-transition: all .25s ease;
+					     -moz-transition: all .25s ease;
+					      -ms-transition: all .25s ease;
+					       -o-transition: all .25s ease;
+					          transition: all .25s ease;
+				}
+				.activea{
+					color: #007D95;
+						opacity: 1;
+					font-family: AvenirBlack;
+					svg{
+						opacity: 1;
+					}
+					.strokeh{
+						stroke: #007D95 !important;
+					}
+					.fillh{
+						fill: #007D95 !important;
+					}
+				}
+				a:hover{
+					color: #007D95;
+						opacity: 1;
+					font-family: AvenirBlack;
+					svg{
+						opacity: 1;
+					}
+					.strokeh{
+						stroke: #007D95 !important;
+					}
+					.fillh{
+						fill: #007D95 !important;
+					}
+				}
+				.mt{
+					margin-top: 24px;
+					margin-bottom: 11px;
+				}
+			}
+			.linksval{
+				display: inline-block;
+				vertical-align: top;
+				width: 100%;
+				max-width: 19.4rem;
+				padding: 3.3rem 1rem 0.5rem 2.3em;
+				min-height: 21.3rem;
+				border-left: 1px solid #C4C4C4;
+				display: none;
+				visibility: hidden;
+				opacity: 0;
+				margin-left: -7px;
+						
+				.links{
+					display: none;
+				}
+				.links_active{
+					display: block;
+				}
+				a{
+					display: block;
+					font-family: AvenirMedium;
+					display: block;
+					position: relative;
+					font-size: 16px;
+					line-height: 30px;
+					letter-spacing: 0.6px;
+					color: #535454;
+					-webkit-transition: all .25s ease;
+					   -moz-transition: all .25s ease;
+					    -ms-transition: all .25s ease;
+					     -o-transition: all .25s ease;
+					        transition: all .25s ease;
+				}
+				a:hover{
+					color: #007D95;
+					font-family: AvenirBlack;
+				}
+			}
+			.dropdowns_ac{
+				min-width: 41.8rem;
+			}
+		}
+		.linkwd:hover{
+			.link{
+				background: #F8F8F8;
+				border-color: #C4C4C4;
+				color: #007D95;
+				.strokeh{
+					stroke: #007D95 !important;
+				}
+				.fillh{
+					fill: #007D95 !important;
+				}
+			}
+			.link:before{
+				content: '';
+				position: absolute;
+				left: 1px;
+				right: 1px;
+				bottom: -2px;
+				height: 2px;
+				background: #F8F8F8;
+				z-index: 99;
+			}
+			.dropdowns{
+				opacity: 1;
+				visibility: visible;
+			}
+			.dropdowns_ac{
+				.linksval{
+			  		display: inline-block;
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+		form{
+			display: inline-block;
+			vertical-align: top;
+			max-width: 30rem;
+			width: 100%;
+			margin-top: 1.05rem;
+			margin-left: 0.35rem;
+			position: relative;
+			input{
+				font-family: AvenirRoman;
+				font-size: 16px;
+				line-height: 18px;
+				color: #717171;
+
+				background: #FFFFFF;
+				border: 1px solid #C4C4C4;
+				border-radius: 100px;
+
+				max-width: 30rem;
+				width: 100%;
+				display: block;
+				padding: 0.7rem;
+				padding-left: 1.35rem;
+				padding-right: 3rem;
+			}
+			button{
+				border: 0;
+				background: transparent;
+				position: absolute;
+				right: 29px;
+				top: 15px;
+				padding: 0;
+			}
+		}
+
+		.rightside{
+			right: 2px;
+			position: absolute;
+			height: 90px;
+			top: 0;
+			.createacc{
+				font-size: 13px;
+				line-height: 18px;
+				letter-spacing: 0.6px;
+				font-family: AvenirBlack;
+				color: #fff;
+				width: 169px;
+				line-height: 45px;
+				background: #0094B3;
+				border-radius: 4px;
+				display: inline-block;
+				text-align: center;
+				text-transform: uppercase;
+				vertical-align: top;
+				margin-top: 1.1rem;
+				-webkit-transition: all .25s ease;
+				   -moz-transition: all .25s ease;
+				    -ms-transition: all .25s ease;
+				     -o-transition: all .25s ease;
+				        transition: all .25s ease;
+			}
+			.createacc:hover{
+				opacity: 0.7;
+			}
+			.login{
+				font-size: 13px;
+				letter-spacing: 0.6px;
+				text-transform: uppercase;
+				color: #535454;
+				font-family: AvenirMedium;
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 7.5px;
+				padding-left: 6.5px;
+				padding-right: 6.5px;
+				line-height: 4.5rem;
+				padding-top: 1px;
+				border-left: 1px solid #fff;
+				border-right: 1px solid #fff;	
+				svg{
+					margin-right: 3px;
+				}
+			}
+			.login:hover{
+				// background: #F8F8F8;
+				// border-color: #C4C4C4;
+				color: #007D95;
+				.strokeh{
+					stroke: #007D95 !important;
+				}
+			}
+		}
+
+		.linkwd2{
+			display: inline-block;
+			vertical-align: top;
+			.link{
+				display: inline-block;
+				line-height: 4.5rem;
+				font-family: AvenirMedium;
+				letter-spacing: 0.6px;
+				text-transform: uppercase;
+				color: #535454;
+				font-size: 13px;
+				margin-right: 1rem;
+				padding-top: 0.05rem;
+				padding-left: 0.75rem;
+				padding-right: 0.75rem;
+				border-left: 1px solid #fff;
+				border-right: 1px solid #fff;
+				position: relative;
+				-webkit-transition: all .25s ease;
+				   -moz-transition: all .25s ease;
+				    -ms-transition: all .25s ease;
+				     -o-transition: all .25s ease;
+				        transition: all .25s ease;
+				svg{
+					margin-right: 0.25rem;
+				}
+			}
+
+			.dropdowns{
+				background: #F8F8F8;
+				border: 1px solid #DCD7D2;
+				box-shadow: 0px 17px 15px 2px rgba(0, 0, 0, 0.25);
+				max-width: 13.75rem;
+				width: 100%;
+				border-radius: 0px 0px 6px 6px;
+				padding: 18px 32px 32px 32px;
+				position: absolute;
+				left: -0.75rem;
+
+				visibility: hidden;
+				opacity: 0;
+				-webkit-transition: visibility .25s ease;
+				   -moz-transition: visibility .25s ease;
+				    -ms-transition: visibility .25s ease;
+				     -o-transition: visibility .25s ease;
+				        transition: visibility .25s ease;
+
+				        
+				a{
+					display: block;
+					font-family: AvenirMedium;
+					display: block;
+					position: relative;
+					font-size: 16px;
+					line-height: 20px;
+					letter-spacing: 0.6px;
+					margin-top: 10px;
+					color: #535454;
+					-webkit-transition: all .25s ease;
+					   -moz-transition: all .25s ease;
+					    -ms-transition: all .25s ease;
+					     -o-transition: all .25s ease;
+					        transition: all .25s ease;
+				}
+				a:hover{
+					color: #007D95;
+					font-family: AvenirBlack;
+				}
+			}
+		}
+		.linkwd2:hover{
+			.link{
+				background: #F8F8F8;
+				border-color: #C4C4C4;
+				color: #007D95;
+				.strokeh{
+					stroke: #007D95 !important;
+				}
+				.fillh{
+					fill: #007D95 !important;
+				}
+			}
+			.link:before{
+				content: '';
+				position: absolute;
+				left: 0px;
+				right: 0px;
+				bottom: -2px;
+				height: 2px;
+				background: #F8F8F8;
+				z-index: 99;
+			}
+			.dropdowns{
+				visibility: visible;
+				opacity: 1;
+			}
+
+		}
+	}
+}
+// navbar end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
