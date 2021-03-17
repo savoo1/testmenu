@@ -72,7 +72,7 @@
     background: #fff;
     left: 0;
     right: 0;
-    top: 70px;
+    top: 0px;
     bottom: 0;
     border: 0;
     padding: 0;
@@ -226,6 +226,11 @@
     padding-right: 10px;
     margin: auto;
     margin-top: 22px; }
+  .navbar .forxicon2 {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 12px;
+    margin-top: 20px; }
   .navbar .wrapper .rightside .createacc {
     margin: 0;
     margin-top: 15px;

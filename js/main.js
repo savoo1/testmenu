@@ -39,7 +39,7 @@ $( window ).resize(function() {
   $(".links_active").removeClass("links_active");
     $(".navbar .wrapper .linkwd .dropdowns").removeClass("dropdowns_ac");
 });
-$('.navbar .forxicon .xicon').click(function(e) {
+$('.navbar .forxicon1 .xicon').click(function(e) {
     e.preventDefault();
     $(".navbar .wrapper .linkwd .leftside .activea").removeClass("activea");
     $(".navbar .wrapper .navonphone").removeClass("navonphone_active");
@@ -49,6 +49,12 @@ $('.navbar .forxicon .xicon').click(function(e) {
 $('.navbar .wrapper .hambmenu, .navbar .wrapper .searchicon').click(function(e) {
     e.preventDefault();
     $(".navbar .wrapper .navonphone").addClass("navonphone_active");
+});
+$('.navbar .forxicon2 .xicon').click(function(e) {
+    e.preventDefault();
+    $(".navbar .wrapper .linkwd .leftside .activea").removeClass("activea");
+ 	 $(".links_active").removeClass("links_active");
+    $(".navbar .wrapper .linkwd .dropdowns").removeClass("dropdowns_ac");
 });
 
 
