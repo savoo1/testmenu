@@ -60,3 +60,68 @@ $('.navbar .forxicon2 .xicon').click(function(e) {
 
 
 
+$('.section2 .tabs .tab').click(function(e) {
+    e.preventDefault();
+    $('.section2 .tabs .tab').removeClass("activetab");
+    $(this).addClass("activetab");
+    var attribut = "." + $(this).attr( "attr" );
+    $(".active_cont").removeClass("active_cont");
+    $(attribut).addClass("active_cont");
+});
+$('.section2 .showslideritems h3').click(function(e) {
+    e.preventDefault();
+    $(".active_cont").removeClass("active_cont");
+    $(this).parent().parent().addClass("active_cont");
+});
+$( window ).resize(function() {
+  $(".section2 .tabs .tab").removeClass("activetab");
+  $(".section2 .tabs .tab:first-child").addClass("activetab");
+  $(".section2 .tabscont .cont").removeClass("active_cont");
+  $(".section2 .tabscont .cont:first-child").addClass("active_cont");
+});
+
+$('.slider-nav').slick({
+  slidesToShow: 5,
+  variableWidth: true,
+  slidesToScroll: 1,
+  focusOnSelect: true,
+  infinite: false,
+  responsive: [
+      {
+        breakpoint: 1700,
+        settings: {
+          slidesToShow: 5,
+          variableWidth: false,
+        }
+      },
+      {
+        breakpoint: 1350,
+        settings: {
+          slidesToShow: 4,
+          variableWidth: false,
+        }
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 3,
+          variableWidth: false,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: true,
+        }
+      },
+    ]
+});
+
+
+
+
+
+
+
+
