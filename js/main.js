@@ -81,10 +81,12 @@ $('.section2 .showslideritems h3').click(function(e) {
 
 });
 $( window ).resize(function() {
-  $(".section2 .tabs .tab").removeClass("activetab");
-  $(".section2 .tabs .tab:first-child").addClass("activetab");
-  $(".section2 .tabscont .cont").removeClass("active_cont");
-  $(".section2 .tabscont .cont:first-child").addClass("active_cont");
+  if ($(window).width() > 992) {
+    $(".section2 .tabs .tab").removeClass("activetab");
+    $(".section2 .tabs .tab:first-child").addClass("activetab");
+    $(".section2 .tabscont .cont").removeClass("active_cont");
+    $(".section2 .tabscont .cont:first-child").addClass("active_cont");
+  }
 });
 
 
