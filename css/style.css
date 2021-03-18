@@ -1093,6 +1093,8 @@ svg {
       border-bottom: 1px solid #676767; }
       .footer .wrapper h1 span {
         color: #fff; }
+        .footer .wrapper h1 span a {
+          color: #fff; }
   .footer .cols {
     max-width: 1420px;
     margin: auto;

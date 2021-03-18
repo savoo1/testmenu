@@ -171,6 +171,10 @@
     max-width: 9rem; } }
 
 @media (max-width: 992px) {
+  .section4 {
+    padding-bottom: 0rem; }
+  .section4 .wrapper {
+    padding-top: 2rem; }
   .footer .wrapper {
     max-width: 17.5rem;
     padding-left: 0.5rem;
@@ -560,3 +564,8 @@
       position: absolute;
       top: 22px;
       right: 10px; } }
+
+@media (max-width: 341px) {
+  .footer .wrapper h1 {
+    padding-left: 30px;
+    padding-right: 30px; } }
