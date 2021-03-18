@@ -72,6 +72,13 @@ $('.section2 .showslideritems h3').click(function(e) {
     e.preventDefault();
     $(".active_cont").removeClass("active_cont");
     $(this).parent().parent().addClass("active_cont");
+
+    setTimeout(function() {
+       var positionofthis = $(".section2 .tabscont .active_cont h3").offset().top - 90;
+       $("html, body").animate({ scrollTop: positionofthis }, 500);
+    }, 250);
+    
+
 });
 $( window ).resize(function() {
   $(".section2 .tabs .tab").removeClass("activetab");
@@ -79,6 +86,9 @@ $( window ).resize(function() {
   $(".section2 .tabscont .cont").removeClass("active_cont");
   $(".section2 .tabscont .cont:first-child").addClass("active_cont");
 });
+
+
+
 
 $('.slider-nav').slick({
   slidesToShow: 5,
