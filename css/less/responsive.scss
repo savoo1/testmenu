@@ -451,6 +451,21 @@
 
 
 @media(max-width: 992px){
+	.navbar .wrapper .navonphone_active{
+		padding-bottom: 70px;
+	}
+	.navbar .wrapper .linkwd2 .dropdowns{
+		position: fixed;
+		top: 0;
+		z-index: 999;
+		background: #fff;
+		left: 0;
+		right: 0;
+		top: 0px;
+		bottom: 0;
+		border: 0;
+		padding: 0;
+	}
 	.browsepage .wrapper .rightside .workspace .boxes .box{
 		height: auto;
 	}

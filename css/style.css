@@ -1,23 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @font-face {
   font-family: AvenirRegular;
-  src: url("../fonts/Avenir-Regular.ttf"); }
+  src: url("../fonts/AvenirLTProRoman/font.woff2") format("woff2"), url("../fonts/AvenirLTProRoman/font.woff") format("woff"); }
 
 @font-face {
   font-family: AvenirMedium;
-  src: url("../fonts/Avenir-Medium.ttf"); }
+  src: url("../fonts/AvenirLTProBook/font.woff2") format("woff2"), url("../fonts/AvenirLTProBook/font.woff") format("woff"); }
 
 @font-face {
   font-family: AvenirHeavy;
-  src: url("../fonts/Avenir-Heavy.ttf"); }
+  src: url("../fonts/AvenirLTProHeavy/font.woff2") format("woff2"), url("../fonts/AvenirLTProHeavy/font.woff") format("woff"); }
 
 @font-face {
   font-family: AvenirRoman;
-  src: url("../fonts/Avenir-Roman.ttf"); }
+  src: url("../fonts/AvenirLTProRoman/font.woff2") format("woff2"), url("../fonts/AvenirLTProRoman/font.woff") format("woff"); }
 
 @font-face {
   font-family: AvenirBlack;
-  src: url("../fonts/Avenir-Black.ttf"); }
+  src: url("../fonts/AvenirLTProBlack/font.woff2") format("woff2"), url("../fonts/AvenirLTProBlack/font.woff") format("woff"); }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 html, body {
   margin: 0;
@@ -490,7 +494,7 @@ svg {
         padding-left: 57px; }
         .section2 .tabs .tab .tit h2 {
           font-family: AvenirRegular;
-          font-size: 21px;
+          font-size: 20px;
           line-height: 18px;
           color: #535454;
           letter-spacing: -0.1px; }
@@ -509,6 +513,7 @@ svg {
               line-height: 20px;
               color: #717171;
               font-family: AvenirRegular !important;
+              font-weight: 400;
               background: #FFFFFF;
               box-shadow: 0px 4px 27px 13px rgba(0, 0, 0, 0.14);
               border-radius: 10px;
@@ -574,11 +579,11 @@ svg {
       margin: auto;
       position: relative; }
     .section2 .tabs .tab:nth-child(4) .tit {
-      max-width: 280px;
+      max-width: 290px;
       margin: auto;
       position: relative; }
     .section2 .tabs .tab:nth-child(5) .tit {
-      max-width: 285px;
+      max-width: 300px;
       margin: auto;
       position: relative; }
     .section2 .tabs .tab:hover .tit svg {
@@ -784,10 +789,10 @@ svg {
     .section2 .tabscont .viewall a:hover {
       color: #00A4C7; }
   .section2 .showslideritems h3 {
-    font-family: AvenirHeavy;
-    font-weight: 800;
+    font-family: AvenirRoman;
+    font-weight: 400;
     font-size: 21px;
-    line-height: 18px;
+    line-height: 21px;
     color: #535454;
     padding-top: 23px;
     padding-bottom: 23px;
@@ -813,13 +818,16 @@ svg {
     .section2 .showslideritems h3 .forspan {
       display: inline-block;
       margin-top: 1px;
-      vertical-align: top; }
+      vertical-align: top;
+      font-family: AvenirRegular !important;
+      font-weight: 400 !important; }
       .section2 .showslideritems h3 .forspan span {
         position: absolute;
         font-size: 14px;
         line-height: 20px;
         color: #717171;
         font-family: AvenirRegular !important;
+        font-weight: 400;
         background: #FFFFFF;
         box-shadow: 0px 4px 27px 13px rgba(0, 0, 0, 0.14);
         border-radius: 10px;
@@ -840,6 +848,8 @@ svg {
     .section2 .showslideritems h3 .forspan:hover span {
       opacity: 1;
       visibility: visible; }
+  .section2 .active_cont .showslideritems h3 {
+    font-family: AvenirHeavy; }
   .section2 .active_cont .showslideritems .leftimg {
     opacity: 1; }
     .section2 .active_cont .showslideritems .leftimg .fillonac {
@@ -895,7 +905,7 @@ svg {
         text-align: center;
         line-height: 2.8rem;
         font-size: 13px;
-        letter-spacing: 2.6px;
+        letter-spacing: 0.6px;
         text-transform: uppercase;
         color: #FFFFFF;
         font-family: AvenirBlack;
@@ -1094,7 +1104,7 @@ svg {
       .footer .wrapper h1 span {
         color: #fff; }
         .footer .wrapper h1 span a {
-          color: #fff; }
+          color: #fff !important; }
   .footer .cols {
     max-width: 1420px;
     margin: auto;
@@ -1155,12 +1165,15 @@ svg {
           margin-right: 14px; }
   .footer h4 {
     font-family: AvenirRegular;
+    font-weight: 400;
     font-size: 14px;
     line-height: 26px;
     text-align: center;
     color: #BDB8B2;
     margin-top: 63px;
     padding-left: 80px; }
+    .footer h4 span {
+      white-space: nowrap; }
     .footer h4 a {
       color: #BDB8B2;
       margin-right: 15px; }
