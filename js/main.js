@@ -59,6 +59,17 @@ $('.navbar .forxicon2 .xicon').click(function(e) {
 
 
 
+$('.browsepage .wrapper .rightside .workspace .options .list').click(function(e) {
+    e.preventDefault();
+    $(".workspace_grid").removeClass("workspace_grid");
+});
+$('.browsepage .wrapper .rightside .workspace .options .grid').click(function(e) {
+    e.preventDefault();
+    $(".workspace").addClass("workspace_grid");
+});
+
+
+
 
 $('.section2 .tabs .tab').click(function(e) {
     e.preventDefault();
@@ -77,9 +88,94 @@ $('.section2 .showslideritems h3').click(function(e) {
        var positionofthis = $(".section2 .tabscont .active_cont h3").offset().top - 90;
        $("html, body").animate({ scrollTop: positionofthis }, 500);
     }, 250);
-    
+});
+
+
+$('.browsepage .wrapper .filters .filterarea h3').click(function(e) {
+    if($(this).parent().hasClass("activefilters")){
+      $(this).parent().removeClass("activefilters");
+    }else{
+      $(this).parent().addClass("activefilters");
+    }
+});
+
+$('.browsepage .wrapper .filters .checkedfilters .clearall').click(function(e) {
+    e.preventDefault();
+    $(".browsepage .wrapper .filters .activefilters .checkboxes input").prop( "checked", false );
+    $(".browsepage .wrapper .filters .checkedfilters p").remove();
+    $(".checkedfilters").removeClass("checkedfilters_active");
+    $("h2 .forno").html("0"); 
+      $(".browsepage .wrapper .rightside .filtersbtn a span").html("0");
 
 });
+$('.browsepage .wrapper .rightside .filtersbtn a').click(function(e) {
+    e.preventDefault();
+    $(".browsepage .wrapper .filters").addClass("filters_active");
+});
+$('.browsepage .wrapper .filters .btnphone a').click(function(e) {
+    e.preventDefault();
+    $(".browsepage .wrapper .filters").removeClass("filters_active");
+});
+
+$('.browsepage .wrapper .filters .filterarea .checkboxa .container_checkbox').change(function(e) {
+    if ($(this).find('input').is(':checked')) {
+      var filtername = $(this).find(".t").html();
+      var filterforclass = filtername.replace(/ /g,'');
+
+      var stringforc = "<p attr='"+filterforclass+"' class='"+filterforclass+"'>" + filtername + " <img src='img/xf.svg' class='xfc' alt=''></p>";
+      $(".browsepage .wrapper .filters .checkedfilters").append(stringforc);
+      $(this).addClass(filterforclass);
+      iforfilter = parseInt($("h2 .forno").html()) + 1;
+      $("h2 .forno").html(iforfilter);
+      $(".browsepage .wrapper .rightside .filtersbtn a span").html(iforfilter);
+
+    }else{
+      var filtername = $(this).find(".t").html();
+      var filterforclass = "." + filtername.replace(/ /g,'');
+      $(".browsepage .wrapper .filters .checkedfilters").find(filterforclass).remove();
+
+
+      iforfilter = parseInt($("h2 .forno").html()) - 1;
+      $("h2 .forno").html(iforfilter); 
+      $(".browsepage .wrapper .rightside .filtersbtn a span").html(iforfilter);
+    }
+
+    $('.browsepage .wrapper .filters .checkedfilters p img').click(function(e) {
+        var classforr = $(this).parent().attr( "attr" ) + " input";
+        $(this).parent().remove();
+
+        $(".browsepage .wrapper .filters .activefilters .checkboxes").find("."+classforr).prop( "checked", false );
+    });
+
+    if(iforfilter == 0){
+      $(".checkedfilters").removeClass("checkedfilters_active");
+    }else{
+      $(".checkedfilters").addClass("checkedfilters_active");
+    }
+
+    
+});
+
+// $('.browsepage .wrapper .filters .checkedfilters p img').on("click", function(event){
+//   console.log($(this).text());
+//     alert("2");
+// });
+$(document).on('click', function(event){
+     if( $(event.target).hasClass('xfc')){
+      iforfilter = parseInt($("h2 .forno").html()) - 1;
+        $("h2 .forno").html(iforfilter); 
+      $(".browsepage .wrapper .rightside .filtersbtn a span").html(iforfilter);
+
+      if(iforfilter == 0){
+        $(".checkedfilters").removeClass("checkedfilters_active");
+      }else{
+        $(".checkedfilters").addClass("checkedfilters_active");
+      }
+     }
+});
+
+
+
 $( window ).resize(function() {
   if ($(window).width() > 992) {
     $(".section2 .tabs .tab").removeClass("activetab");

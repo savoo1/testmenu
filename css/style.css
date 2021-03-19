@@ -1166,3 +1166,440 @@ svg {
       margin-right: 15px; }
     .footer h4 a:hover {
       color: #00A4C7; }
+
+.browsepage {
+  margin-top: 4.25rem;
+  background: #fff;
+  padding-bottom: 6rem; }
+  .browsepage .wrapper {
+    min-height: 35rem;
+    max-width: 85rem;
+    width: 100%;
+    margin: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    display: flex; }
+    .browsepage .wrapper .allfilters {
+      margin-top: 37px; }
+    .browsepage .wrapper .filters {
+      max-width: 17.22rem;
+      width: 100%; }
+      .browsepage .wrapper .filters .btnphone {
+        display: none; }
+      .browsepage .wrapper .filters .contins {
+        padding-top: 175px; }
+      .browsepage .wrapper .filters h2 {
+        font-family: AvenirBlack;
+        font-size: 24px;
+        line-height: 20px;
+        color: #47463D; }
+        .browsepage .wrapper .filters h2 .forno {
+          font-size: 0; }
+      .browsepage .wrapper .filters .filterarea:last-child {
+        border-bottom: 1px solid #C4C4C4; }
+      .browsepage .wrapper .filters .filterarea {
+        border-top: 1px solid #C4C4C4;
+        border-right: 1px solid #C4C4C4;
+        max-width: 293px;
+        padding-bottom: 27px;
+        padding-top: 31px;
+        padding-left: 5px; }
+        .browsepage .wrapper .filters .filterarea h3 {
+          font-family: AvenirBlack;
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: 0.6px;
+          color: #535454;
+          position: relative;
+          max-width: 260px;
+          margin-bottom: 10px; }
+          .browsepage .wrapper .filters .filterarea h3 .rightarrow {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%); }
+        .browsepage .wrapper .filters .filterarea .checkboxes {
+          overflow: hidden;
+          padding-top: 0;
+          max-height: 0;
+          -webkit-transition: all .25s ease;
+          -moz-transition: all .25s ease;
+          -ms-transition: all .25s ease;
+          -o-transition: all .25s ease;
+          transition: all .25s ease; }
+        .browsepage .wrapper .filters .filterarea .checkboxa {
+          /* The container_checkbox */
+          /* Hide the browser's default checkbox */
+          /* Create a custom checkbox */
+          /* On mouse-over, add a grey background color */
+          /* When the checkbox is checked, add a blue background */
+          /* Create the checkmark/indicator (hidden when not checked) */
+          /* Show the checkmark when checked */ }
+          .browsepage .wrapper .filters .filterarea .checkboxa .container_checkbox {
+            display: block;
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 9px;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.7px;
+            color: #535454;
+            font-family: AvenirRegular;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; }
+          .browsepage .wrapper .filters .filterarea .checkboxa .container_checkbox input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0; }
+          .browsepage .wrapper .filters .filterarea .checkboxa .checkmark {
+            position: absolute;
+            top: -1px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border: 1px solid #B6B6B6; }
+          .browsepage .wrapper .filters .filterarea .checkboxa .container_checkbox:hover input ~ .checkmark {
+            background-color: #B6B6B6; }
+          .browsepage .wrapper .filters .filterarea .checkboxa .container_checkbox input:checked ~ .checkmark {
+            background-color: #00A4C7;
+            border-color: #00A4C7; }
+          .browsepage .wrapper .filters .filterarea .checkboxa .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none; }
+          .browsepage .wrapper .filters .filterarea .checkboxa .container_checkbox input:checked ~ .checkmark:after {
+            display: block; }
+      .browsepage .wrapper .filters .activefilters h3 .rightarrow {
+        transform: rotate(180deg);
+        margin-top: -3px; }
+        .browsepage .wrapper .filters .activefilters h3 .rightarrow path {
+          fill: #0094B3 !important; }
+      .browsepage .wrapper .filters .activefilters .checkboxes {
+        padding-top: 1px;
+        max-height: 700px; }
+      .browsepage .wrapper .filters .checkedfilters {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: -20px;
+        max-width: 300px;
+        position: relative;
+        display: none; }
+        .browsepage .wrapper .filters .checkedfilters .clearall {
+          position: absolute;
+          right: 7px;
+          top: -32px;
+          font-family: AvenirRegular;
+          font-size: 13px;
+          line-height: 21px;
+          letter-spacing: 0.6px;
+          text-transform: uppercase;
+          color: #535454; }
+        .browsepage .wrapper .filters .checkedfilters .clearall:hover {
+          opacity: 0.7; }
+        .browsepage .wrapper .filters .checkedfilters p {
+          background: #FFFFFF;
+          border: 1px solid #C8C8C8;
+          border-radius: 100px;
+          font-family: AvenirRegular;
+          font-size: 13px;
+          line-height: 16px;
+          letter-spacing: 0.6px;
+          color: #535454;
+          line-height: 37px;
+          padding-left: 15px;
+          padding-right: 15px;
+          display: inline-block;
+          margin-right: 5px;
+          margin-bottom: 10px; }
+          .browsepage .wrapper .filters .checkedfilters p img {
+            margin-left: 5px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 14px;
+            cursor: pointer; }
+          .browsepage .wrapper .filters .checkedfilters p img:hover {
+            opacity: 0.7; }
+      .browsepage .wrapper .filters .checkedfilters_active {
+        display: block; }
+    .browsepage .wrapper .rightside {
+      max-width: calc(100% - 17.22rem);
+      width: 100%; }
+      .browsepage .wrapper .rightside h2 {
+        font-size: 10px;
+        line-height: 34px;
+        letter-spacing: 0.2px;
+        font-family: AvenirBlack;
+        color: #47463D;
+        text-transform: uppercase;
+        margin-top: 75px; }
+      .browsepage .wrapper .rightside h1 {
+        font-size: 70px;
+        line-height: 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #47463D;
+        margin-top: 12px;
+        letter-spacing: -1px; }
+      .browsepage .wrapper .rightside .courses {
+        font-family: AvenirRegular;
+        font-size: 15px;
+        line-height: 21px;
+        color: #6F6F6F;
+        margin-top: 22px;
+        letter-spacing: 0.6px; }
+      .browsepage .wrapper .rightside .filtersbtn a {
+        background: #0094B3;
+        border: 1px solid #0094B3;
+        border-radius: 100px;
+        min-width: 96px;
+        display: inline-block;
+        line-height: 35px;
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 33px;
+        color: #FFFFFF;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: AvenirMedium;
+        letter-spacing: 0.6px;
+        margin-top: 15px;
+        margin-bottom: 0; }
+        @media (min-width: 1300px) {
+          .browsepage .wrapper .rightside .filtersbtn a {
+            display: none; } }
+      .browsepage .wrapper .rightside .workspace .options {
+        text-align: right;
+        margin-top: -19px;
+        padding-right: 2px;
+        margin-bottom: 19px; }
+        .browsepage .wrapper .rightside .workspace .options a {
+          display: inline-block;
+          margin-left: 11px;
+          -webkit-transition: all .25s ease;
+          -moz-transition: all .25s ease;
+          -ms-transition: all .25s ease;
+          -o-transition: all .25s ease;
+          transition: all .25s ease; }
+        .browsepage .wrapper .rightside .workspace .options a:hover {
+          opacity: 0.7; }
+        .browsepage .wrapper .rightside .workspace .options .list svg path {
+          fill: #007D95 !important; }
+      .browsepage .wrapper .rightside .workspace .boxes .box {
+        background: #FFFFFF;
+        border: 1px solid #EBEBEB;
+        box-shadow: 0px 11px 19px 3px rgba(0, 0, 0, 0.12);
+        border-radius: 6px;
+        height: 185px;
+        width: calc(100% - 4px);
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 10.5px;
+        -webkit-transition: height .25s ease;
+        -moz-transition: height .25s ease;
+        -ms-transition: height .25s ease;
+        -o-transition: height .25s ease;
+        transition: height .25s ease; }
+        .browsepage .wrapper .rightside .workspace .boxes .box .iconr {
+          position: absolute;
+          left: 14px;
+          top: 13px; }
+        .browsepage .wrapper .rightside .workspace .boxes .box img {
+          display: inline-block;
+          vertical-align: top; }
+        .browsepage .wrapper .rightside .workspace .boxes .box .desc {
+          display: inline-block;
+          padding: 16px 24px;
+          max-width: calc(100% - 380px);
+          padding-right: 310px; }
+          .browsepage .wrapper .rightside .workspace .boxes .box .desc h3 {
+            font-family: AvenirMedium;
+            font-size: 12px;
+            line-height: 26px;
+            letter-spacing: 0.6px;
+            color: #00A4C7; }
+          .browsepage .wrapper .rightside .workspace .boxes .box .desc h4 {
+            margin: 0;
+            font-size: 24px;
+            line-height: 26px;
+            font-family: AvenirMedium;
+            margin-top: -3px;
+            letter-spacing: 0.4px;
+            color: #47463D; }
+          .browsepage .wrapper .rightside .workspace .boxes .box .desc p {
+            font-family: AvenirMedium;
+            font-size: 15px;
+            line-height: 21px;
+            color: #6F6F6F;
+            margin-top: 6px;
+            max-width: 537px; }
+            .browsepage .wrapper .rightside .workspace .boxes .box .desc p a {
+              color: #6F6F6F;
+              -webkit-transition: all .25s ease;
+              -moz-transition: all .25s ease;
+              -ms-transition: all .25s ease;
+              -o-transition: all .25s ease;
+              transition: all .25s ease; }
+            .browsepage .wrapper .rightside .workspace .boxes .box .desc p a:hover {
+              opacity: 0.7; }
+          .browsepage .wrapper .rightside .workspace .boxes .box .desc .rightt {
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%); }
+            .browsepage .wrapper .rightside .workspace .boxes .box .desc .rightt p {
+              font-family: AvenirRegular;
+              font-size: 17px;
+              line-height: 20px;
+              text-align: right;
+              color: #6F6F6F;
+              padding-right: 0;
+              margin-bottom: 6px;
+              margin-top: 13px;
+              max-width: unset; }
+              .browsepage .wrapper .rightside .workspace .boxes .box .desc .rightt p .line {
+                opacity: 0.6;
+                margin-right: 5px;
+                margin-left: 5px;
+                font-size: 13px;
+                display: inline-block;
+                vertical-align: top; }
+              .browsepage .wrapper .rightside .workspace .boxes .box .desc .rightt p .b {
+                font-family: AvenirBlack;
+                margin-right: 6px;
+                color: #47463D; }
+              .browsepage .wrapper .rightside .workspace .boxes .box .desc .rightt p .b2 {
+                font-family: AvenirBlack; }
+      .browsepage .wrapper .rightside .workspace .boxes .ads {
+        background: #FFFFFF;
+        border: 1px solid #EBEBEB;
+        box-shadow: 0px 11px 19px 3px rgba(0, 0, 0, 0.12);
+        border-radius: 6px;
+        height: 183px;
+        width: calc(100% - 4px);
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 10.5px;
+        background: linear-gradient(#003d4c 100%, #003d4c 100%), url("../img/bgads.png") no-repeat top right;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-blend-mode: overlay;
+        position: relative;
+        padding-top: 40px;
+        padding-bottom: 40px; }
+        .browsepage .wrapper .rightside .workspace .boxes .ads .cc {
+          position: relative;
+          z-index: 2; }
+        .browsepage .wrapper .rightside .workspace .boxes .ads h1 {
+          font-size: 42px;
+          line-height: 45px;
+          font-weight: 600;
+          color: #fff;
+          margin: 0;
+          padding: 0;
+          font-family: 'Montserrat', sans-serif;
+          text-align: center; }
+        .browsepage .wrapper .rightside .workspace .boxes .ads p {
+          font-family: AvenirRegular;
+          font-size: 18px;
+          line-height: 21px;
+          margin: auto;
+          text-align: center;
+          max-width: 500px;
+          color: #fff;
+          margin-top: 13px; }
+      .browsepage .wrapper .rightside .workspace .boxes .ads:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 61, 76, 0.6);
+        z-index: 0; }
+      .browsepage .wrapper .rightside .workspace_grid .options .list svg path {
+        fill: #47463D !important; }
+      .browsepage .wrapper .rightside .workspace_grid .options .grid svg path {
+        stroke: #007D95 !important; }
+      .browsepage .wrapper .rightside .workspace_grid .boxes::after {
+        content: "";
+        flex: auto; }
+      .browsepage .wrapper .rightside .workspace_grid .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 5px; }
+        .browsepage .wrapper .rightside .workspace_grid .boxes .box {
+          flex: 1 0 307px;
+          max-width: 307px;
+          margin-left: 0;
+          margin-right: 0;
+          height: 312px;
+          border: 0;
+          margin-bottom: 20px;
+          margin-right: 14px; }
+          .browsepage .wrapper .rightside .workspace_grid .boxes .box img {
+            max-width: 100%; }
+          .browsepage .wrapper .rightside .workspace_grid .boxes .box .desc {
+            max-width: 100%;
+            display: block;
+            padding: 0;
+            max-width: unset;
+            padding: 10px 15px 10px 17px; }
+            .browsepage .wrapper .rightside .workspace_grid .boxes .box .desc h3 {
+              font-size: 10px; }
+            .browsepage .wrapper .rightside .workspace_grid .boxes .box .desc h4 {
+              font-size: 21px;
+              line-height: 21px;
+              margin-top: -5px; }
+            .browsepage .wrapper .rightside .workspace_grid .boxes .box .desc p {
+              display: none; }
+            .browsepage .wrapper .rightside .workspace_grid .boxes .box .desc .rightt {
+              position: inherit;
+              right: unset;
+              top: unset;
+              transform: unset; }
+              .browsepage .wrapper .rightside .workspace_grid .boxes .box .desc .rightt p {
+                display: block;
+                text-align: left;
+                font-size: 13px;
+                padding-right: 0;
+                margin-bottom: 0;
+                margin-top: 1px; }
+                .browsepage .wrapper .rightside .workspace_grid .boxes .box .desc .rightt p .line {
+                  margin-right: 3px;
+                  margin-left: 4px;
+                  font-size: 9px; }
+              .browsepage .wrapper .rightside .workspace_grid .boxes .box .desc .rightt p:last-child {
+                position: absolute;
+                right: 17px;
+                bottom: 10px; }
+        .browsepage .wrapper .rightside .workspace_grid .boxes .box:nth-child(4n) {
+          margin-right: 0; }
+        .browsepage .wrapper .rightside .workspace_grid .boxes .ads {
+          padding-top: 28px;
+          padding-bottom: 28px;
+          background: linear-gradient(#003d4c 100%, #003d4c 100%), url("../img/bgads_grid.png") no-repeat top right;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          background-blend-mode: overlay; }
+          .browsepage .wrapper .rightside .workspace_grid .boxes .ads h1 {
+            text-align: left;
+            padding-left: 32px;
+            padding-right: 50px; }
+          .browsepage .wrapper .rightside .workspace_grid .boxes .ads p {
+            text-align: left;
+            padding-left: 32px;
+            padding-right: 20px; }
