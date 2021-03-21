@@ -120,7 +120,7 @@ $('.browsepage .wrapper .filters .btnphone a').click(function(e) {
 $('.browsepage .wrapper .filters .filterarea .checkboxa .container_checkbox').change(function(e) {
     if ($(this).find('input').is(':checked')) {
       var filtername = $(this).find(".t").html();
-      var filterforclass = filtername.replace(/ /g,'');
+      var filterforclass = filtername.replace(/ /g,'').replace(/[^\w\s]/gi, '');
 
       var stringforc = "<p attr='"+filterforclass+"' class='"+filterforclass+"'>" + filtername + " <img src='img/xf.svg' class='xfc' alt=''></p>";
       $(".browsepage .wrapper .filters .checkedfilters").append(stringforc);
@@ -131,7 +131,7 @@ $('.browsepage .wrapper .filters .filterarea .checkboxa .container_checkbox').ch
 
     }else{
       var filtername = $(this).find(".t").html();
-      var filterforclass = "." + filtername.replace(/ /g,'');
+      var filterforclass = "." + filtername.replace(/ /g,'').replace(/[^\w\s]/gi, '');
       $(".browsepage .wrapper .filters .checkedfilters").find(filterforclass).remove();
 
 

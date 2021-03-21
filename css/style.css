@@ -1414,12 +1414,7 @@ svg {
         margin: auto;
         position: relative;
         overflow: hidden;
-        margin-bottom: 10.5px;
-        -webkit-transition: height .25s ease;
-        -moz-transition: height .25s ease;
-        -ms-transition: height .25s ease;
-        -o-transition: height .25s ease;
-        transition: height .25s ease; }
+        margin-bottom: 10.5px; }
         .browsepage .wrapper .rightside .workspace .boxes .box .iconr {
           position: absolute;
           left: 14px;
