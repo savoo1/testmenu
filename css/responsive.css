@@ -989,18 +989,18 @@
     padding: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    line-height: unset; }
+    line-height: 20px; }
   .navbar .wrapper form input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     padding: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    line-height: unset; }
+    line-height: 20px; }
   .navbar .wrapper form input::placeholder {
     padding: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    line-height: unset; }
+    line-height: 20px; }
   .navbar .wrapper form input {
     padding: 14px;
     padding-right: 40px;
@@ -1008,7 +1008,7 @@
     position: relative;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    line-height: unset;
+    line-height: 20px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
