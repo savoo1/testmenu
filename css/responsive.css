@@ -992,7 +992,8 @@
     color: #717171;
     padding-top: 0;
     padding-bottom: 0;
-    line-height: 45px; }
+    line-height: 45px;
+    -webkit-transform: translate(0); }
   .navbar .wrapper form *:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     font-family: AvenirRoman;
@@ -1001,7 +1002,8 @@
     color: #717171;
     padding-top: 0;
     padding-bottom: 0;
-    line-height: 45px; }
+    line-height: 45px;
+    -webkit-transform: translate(0); }
   .navbar .wrapper form *::placeholder {
     font-family: AvenirRoman;
     font-size: 16px;
@@ -1009,7 +1011,8 @@
     color: #717171;
     padding-top: 0;
     padding-bottom: 0;
-    line-height: 45px; }
+    line-height: 45px;
+    -webkit-transform: translate(0); }
   .navbar .wrapper form input {
     padding: 0.625rem;
     padding-right: 2rem;

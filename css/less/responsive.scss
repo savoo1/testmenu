@@ -1284,6 +1284,7 @@
 		  padding-top: 0;
 		  padding-bottom: 0;
 		  line-height: 45px;
+		  -webkit-transform: translate(0);
 		}
 
 		*:-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -1294,6 +1295,7 @@
 		  padding-top: 0;
 		  padding-bottom: 0;
 		  line-height: 45px;
+		  -webkit-transform: translate(0);
 		}
 
 		*::placeholder {
@@ -1304,6 +1306,7 @@
 		  padding-top: 0;
 		  padding-bottom: 0;
 		  line-height: 45px;
+		  -webkit-transform: translate(0);
 		}
 	}
 	.navbar .wrapper form input{
