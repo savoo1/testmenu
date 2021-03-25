@@ -1275,15 +1275,16 @@
 	.navbar .wrapper .linkwd{
 		margin-left: 0;
 	}
-	.navbar .wrapper form button{
-		top: 16px;
-	}
+	// .navbar .wrapper form button{
+	// 	top: 17px;
+	// 	position: absolute;
+	// }
 	.navbar .wrapper form input::-webkit-input-placeholder { /* Edge */
 	  	padding: 14px;
 	    font-family: 'Montserrat', sans-serif;
 	    font-weight: 500;
 	    line-height: unset;
-	    top: 0;
+	    
 	}
 
 	.navbar .wrapper form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -1291,7 +1292,7 @@
 	    font-family: 'Montserrat', sans-serif;
 	    font-weight: 500;
 	    line-height: unset;
-	    top: 0;
+	    
 	}
 
 	.navbar .wrapper form input::placeholder {
@@ -1299,7 +1300,7 @@
 	  font-family: 'Montserrat', sans-serif;
 	  font-weight: 500;
 	  line-height: unset;
-	  top: 0;
+	  
 	}
 	.navbar .wrapper form input{
 		padding: 14px;
