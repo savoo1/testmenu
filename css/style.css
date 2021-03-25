@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap");
 @font-face {
   font-family: AvenirRegular;
   src: url("../fonts/AvenirLTProRoman/font.woff2") format("woff2"), url("../fonts/AvenirLTProRoman/font.woff") format("woff"); }
@@ -100,12 +100,7 @@ svg {
         padding-left: 0.75rem;
         padding-right: 0.75rem;
         border-left: 1px solid #fff;
-        border-right: 1px solid #fff;
-        -webkit-transition: all .25s ease;
-        -moz-transition: all .25s ease;
-        -ms-transition: all .25s ease;
-        -o-transition: all .25s ease;
-        transition: all .25s ease; }
+        border-right: 1px solid #fff; }
         .navbar .wrapper .linkwd .link svg {
           margin-right: 0.25rem; }
       .navbar .wrapper .linkwd .dropdowns {
@@ -249,6 +244,10 @@ svg {
       margin-left: 0.35rem;
       position: relative; }
       .navbar .wrapper form input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        box-shadow: none;
         font-family: AvenirRoman;
         font-size: 16px;
         line-height: 18px;
@@ -334,12 +333,7 @@ svg {
         padding-right: 0.75rem;
         border-left: 1px solid #fff;
         border-right: 1px solid #fff;
-        position: relative;
-        -webkit-transition: all .25s ease;
-        -moz-transition: all .25s ease;
-        -ms-transition: all .25s ease;
-        -o-transition: all .25s ease;
-        transition: all .25s ease; }
+        position: relative; }
         .navbar .wrapper .linkwd2 .link svg {
           margin-right: 0.25rem; }
       .navbar .wrapper .linkwd2 .dropdowns {
@@ -479,7 +473,7 @@ svg {
     padding-left: 2rem;
     padding-right: 2rem;
     position: relative;
-    padding-top: 3.75rem; }
+    padding-top: 2.25rem; }
   .section2 .tabs {
     display: flex;
     justify-content: space-between;
@@ -487,11 +481,13 @@ svg {
     .section2 .tabs .tab {
       max-width: 302px;
       width: 100%;
-      min-height: 132px;
+      min-height: 162px;
+      padding-top: 30px;
       position: relative;
       cursor: pointer; }
       .section2 .tabs .tab .tit {
-        padding-left: 57px; }
+        padding-left: 57px;
+        position: relative; }
         .section2 .tabs .tab .tit h2 {
           font-family: AvenirRegular;
           font-size: 20px;
@@ -716,6 +712,10 @@ svg {
       text-transform: uppercase;
       color: #535454;
       margin-bottom: 24px; }
+    .section2 .tabscont .sliderinsid a:hover .box {
+      box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.2); }
+      .section2 .tabscont .sliderinsid a:hover .box .cont_box h4 {
+        color: #0094B3; }
     .section2 .tabscont .sliderinsid .box {
       max-width: 307px;
       width: 100%;
@@ -725,7 +725,12 @@ svg {
       box-shadow: 0px 8px 13px 2px rgba(0, 0, 0, 0.08);
       border-radius: 6px;
       margin-bottom: 30px;
-      position: relative; }
+      position: relative;
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease; }
       .section2 .tabscont .sliderinsid .box .placeforimg {
         height: 152.99px;
         overflow: hidden; }
@@ -748,7 +753,12 @@ svg {
           font-size: 21px;
           line-height: 22px;
           color: #535454;
-          margin-top: -3px; }
+          margin-top: -3px;
+          -webkit-transition: all .25s ease;
+          -moz-transition: all .25s ease;
+          -ms-transition: all .25s ease;
+          -o-transition: all .25s ease;
+          transition: all .25s ease; }
         .section2 .tabscont .sliderinsid .box .cont_box p {
           font-family: AvenirMedium;
           font-size: 13px;
@@ -1008,6 +1018,10 @@ svg {
       text-transform: uppercase;
       color: #535454;
       margin-bottom: 24px; }
+    .section4 .wrapper a:hover .box {
+      box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.2); }
+      .section4 .wrapper a:hover .box .cont_box h4 {
+        color: #0094B3; }
     .section4 .wrapper .box {
       max-width: 307px;
       width: 100%;
@@ -1017,7 +1031,12 @@ svg {
       box-shadow: 0px 8px 13px 2px rgba(0, 0, 0, 0.08);
       border-radius: 6px;
       margin-bottom: 30px;
-      position: relative; }
+      position: relative;
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease; }
       .section4 .wrapper .box .placeforimg {
         height: 152.99px;
         overflow: hidden; }
@@ -1040,7 +1059,12 @@ svg {
           font-size: 21px;
           line-height: 22px;
           color: #535454;
-          margin-top: -3px; }
+          margin-top: -3px;
+          -webkit-transition: all .25s ease;
+          -moz-transition: all .25s ease;
+          -ms-transition: all .25s ease;
+          -o-transition: all .25s ease;
+          transition: all .25s ease; }
         .section4 .wrapper .box .cont_box p {
           font-family: AvenirMedium;
           font-size: 13px;
@@ -1094,6 +1118,7 @@ svg {
     position: relative; }
     .footer .wrapper h1 {
       font-family: AvenirRegular;
+      font-weight: 500;
       font-size: 32px;
       line-height: 26px;
       text-align: center;
@@ -1104,7 +1129,8 @@ svg {
       .footer .wrapper h1 span {
         color: #fff; }
         .footer .wrapper h1 span a {
-          color: #fff !important; }
+          color: #fff !important;
+          white-space: nowrap; }
   .footer .cols {
     max-width: 1420px;
     margin: auto;
@@ -1130,11 +1156,10 @@ svg {
           font-family: AvenirRegular;
           font-size: 16px;
           line-height: 26px;
-          color: #FFFFFF;
-          margin-bottom: 1px;
-          opacity: 0.7; }
+          color: rgba(255, 255, 255, 0.7);
+          margin-bottom: 1px; }
           .footer .cols .col .contins p a {
-            color: #fff; }
+            color: rgba(255, 255, 255, 0.7); }
           .footer .cols .col .contins p a:hover {
             color: #00A4C7; }
     .footer .cols .col:nth-child(3) .contins {
@@ -1158,11 +1183,13 @@ svg {
           margin-top: 3px; }
       .footer .cols .col:nth-child(5) .contins .sm {
         margin-left: -45px; }
-        .footer .cols .col:nth-child(5) .contins .sm p a {
-          display: inline-block;
-          margin-top: 11px;
-          vertical-align: top;
-          margin-right: 14px; }
+        .footer .cols .col:nth-child(5) .contins .sm p {
+          opacity: 1; }
+          .footer .cols .col:nth-child(5) .contins .sm p a {
+            display: inline-block;
+            margin-top: 11px;
+            vertical-align: top;
+            margin-right: 14px; }
   .footer h4 {
     font-family: AvenirRegular;
     font-weight: 400;
@@ -1198,6 +1225,8 @@ svg {
     .browsepage .wrapper .filters {
       max-width: 17.22rem;
       width: 100%; }
+      .browsepage .wrapper .filters .filtersbefore {
+        display: none; }
       .browsepage .wrapper .filters .btnphone {
         display: none; }
       .browsepage .wrapper .filters .contins {
@@ -1209,14 +1238,24 @@ svg {
         color: #47463D; }
         .browsepage .wrapper .filters h2 .forno {
           font-size: 0; }
+      .browsepage .wrapper .filters h4 {
+        font-family: AvenirMedium;
+        font-size: 16px;
+        line-height: 23px;
+        color: #47463D;
+        margin-bottom: -30px;
+        margin-top: -1px;
+        font-weight: 500; }
+      .browsepage .wrapper .filters .mt54 {
+        margin-top: 62px; }
+      .browsepage .wrapper .filters h4 + .checkedfilters {
+        margin-top: 40px !important; }
       .browsepage .wrapper .filters .filterarea:last-child {
         border-bottom: 1px solid #C4C4C4; }
       .browsepage .wrapper .filters .filterarea {
         border-top: 1px solid #C4C4C4;
         border-right: 1px solid #C4C4C4;
         max-width: 293px;
-        padding-bottom: 27px;
-        padding-top: 31px;
         padding-left: 5px; }
         .browsepage .wrapper .filters .filterarea h3 {
           font-family: AvenirBlack;
@@ -1226,21 +1265,28 @@ svg {
           color: #535454;
           position: relative;
           max-width: 260px;
-          margin-bottom: 10px; }
+          padding-bottom: 31px;
+          padding-top: 31px;
+          cursor: pointer;
+          font-weight: 400; }
           .browsepage .wrapper .filters .filterarea h3 .rightarrow {
             position: absolute;
             right: 0;
             top: 50%;
             transform: translateY(-50%); }
         .browsepage .wrapper .filters .filterarea .checkboxes {
+          margin-top: -17px;
+          padding-bottom: 27px;
+          display: none;
+          visibility: hidden;
           overflow: hidden;
           padding-top: 0;
           max-height: 0;
-          -webkit-transition: all .25s ease;
-          -moz-transition: all .25s ease;
-          -ms-transition: all .25s ease;
-          -o-transition: all .25s ease;
-          transition: all .25s ease; }
+          -webkit-transition: max-height .25s ease;
+          -moz-transition: max-height .25s ease;
+          -ms-transition: max-height .25s ease;
+          -o-transition: max-height .25s ease;
+          transition: max-height .25s ease; }
         .browsepage .wrapper .filters .filterarea .checkboxa {
           /* The container_checkbox */
           /* Hide the browser's default checkbox */
@@ -1278,8 +1324,8 @@ svg {
             height: 16px;
             background-color: #fff;
             border: 1px solid #B6B6B6; }
-          .browsepage .wrapper .filters .filterarea .checkboxa .container_checkbox:hover input ~ .checkmark {
-            background-color: #B6B6B6; }
+          .browsepage .wrapper .filters .filterarea .checkboxa .container_checkbox:hover {
+            cursor: pointer; }
           .browsepage .wrapper .filters .filterarea .checkboxa .container_checkbox input:checked ~ .checkmark {
             background-color: #00A4C7;
             border-color: #00A4C7; }
@@ -1295,11 +1341,13 @@ svg {
         .browsepage .wrapper .filters .activefilters h3 .rightarrow path {
           fill: #0094B3 !important; }
       .browsepage .wrapper .filters .activefilters .checkboxes {
+        display: block;
         padding-top: 1px;
-        max-height: 700px; }
+        max-height: 700px;
+        visibility: visible; }
       .browsepage .wrapper .filters .checkedfilters {
         display: block;
-        margin-top: 15px;
+        margin-top: 5px;
         margin-bottom: -20px;
         max-width: 300px;
         position: relative;
@@ -1351,7 +1399,8 @@ svg {
         font-family: AvenirBlack;
         color: #47463D;
         text-transform: uppercase;
-        margin-top: 75px; }
+        margin-top: 75px;
+        min-height: 34px; }
       .browsepage .wrapper .rightside h1 {
         font-size: 70px;
         line-height: 35px;
@@ -1360,6 +1409,9 @@ svg {
         color: #47463D;
         margin-top: 12px;
         letter-spacing: -1px; }
+        .browsepage .wrapper .rightside h1 span {
+          font-style: italic;
+          font-weight: 300; }
       .browsepage .wrapper .rightside .courses {
         font-family: AvenirRegular;
         font-size: 15px;
@@ -1611,3 +1663,517 @@ svg {
             text-align: left;
             padding-left: 32px;
             padding-right: 20px; }
+
+.details_hero {
+  margin-top: 4.25rem;
+  background: linear-gradient(#003d4c 100%, #003d4c 100%), url("../img/detailsbg.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: overlay;
+  position: relative; }
+  .details_hero .wrapper {
+    min-height: 614px;
+    max-width: 85rem;
+    width: 100%;
+    margin: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    z-index: 2; }
+    .details_hero .wrapper h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 7px;
+      color: #FFFFFF;
+      padding-top: 137px; }
+    .details_hero .wrapper h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 70px;
+      font-size: 70px;
+      margin-top: 16px;
+      letter-spacing: -0.01em;
+      color: #fff;
+      max-width: 800px; }
+    .details_hero .wrapper .namep {
+      margin-top: 26px;
+      padding-left: 76px;
+      position: relative; }
+      .details_hero .wrapper .namep .avatar {
+        position: absolute;
+        left: 10px;
+        top: -3px; }
+      .details_hero .wrapper .namep p {
+        font-family: AvenirRegular;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 23px;
+        color: #fff; }
+      .details_hero .wrapper .namep h3 {
+        font-family: AvenirMedium;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 23px;
+        color: #fff;
+        letter-spacing: 0.02em; }
+        .details_hero .wrapper .namep h3 span {
+          margin-left: 4px;
+          font-size: 17px;
+          margin-top: -3px;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 6px; }
+        .details_hero .wrapper .namep h3 a {
+          color: #0094B3;
+          font-size: 17px;
+          letter-spacing: -0.03em; }
+    .details_hero .wrapper .options {
+      margin-top: 47px;
+      padding-left: 3px; }
+      .details_hero .wrapper .options a {
+        display: inline-block;
+        background: #FFFFFF;
+        /* course shadow */
+        box-shadow: 0px 11px 19px 3px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        min-height: 48px;
+        line-height: 48px;
+        padding-left: 26px;
+        padding-right: 26px;
+        font-family: AvenirBlack;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 13px;
+        /* or 138% */
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: #535454;
+        vertical-align: top;
+        margin-right: 5px;
+        -webkit-transition: all .25s ease;
+        -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+        -o-transition: all .25s ease;
+        transition: all .25s ease; }
+      .details_hero .wrapper .options a:hover {
+        opacity: 0.7; }
+      .details_hero .wrapper .options .iconbtn {
+        padding-left: 0;
+        padding-right: 0;
+        width: 54px;
+        text-align: center;
+        position: relative; }
+        .details_hero .wrapper .options .iconbtn img {
+          display: block;
+          margin: auto;
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%); }
+
+.details_hero:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url("../img/gradient.png") no-repeat bottom left;
+  z-index: 0; }
+
+.details_hero:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #003D4C;
+  opacity: 0.5;
+  z-index: -1; }
+
+.detaols_sec2 .wrapper {
+  max-width: 85rem;
+  width: 100%;
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 31.2rem;
+  position: relative;
+  z-index: 2;
+  padding-top: 49px;
+  padding-bottom: 156px;
+  position: relative; }
+  .detaols_sec2 .wrapper .rightbox {
+    position: absolute;
+    right: 44px;
+    top: -323px;
+    min-height: 496px;
+    max-width: 425px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 11px 19px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    padding: 27px 30px; }
+    .detaols_sec2 .wrapper .rightbox h3 {
+      font-family: AvenirMedium;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 32px;
+      letter-spacing: 0.6px;
+      color: #00A4C7; }
+    .detaols_sec2 .wrapper .rightbox h2 {
+      position: absolute;
+      right: 30px;
+      top: 40px;
+      font-family: AvenirBlack;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 20px;
+      text-align: right;
+      color: #535454; }
+    .detaols_sec2 .wrapper .rightbox h1 {
+      font-family: AvenirHeavy;
+      font-size: 32px;
+      line-height: 37px;
+      font-weight: 800;
+      color: #535454;
+      margin-top: -1px; }
+    .detaols_sec2 .wrapper .rightbox .datas {
+      margin-top: 11px; }
+      .detaols_sec2 .wrapper .rightbox .datas p {
+        font-family: AvenirBlack;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 26px;
+        color: #6F6F6F;
+        margin: 0;
+        position: relative; }
+        .detaols_sec2 .wrapper .rightbox .datas p a {
+          position: absolute;
+          right: 0;
+          font-family: AvenirMedium;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 27px;
+          letter-spacing: 0.6px;
+          color: #0094B3;
+          padding: 0;
+          border: 0; }
+          .detaols_sec2 .wrapper .rightbox .datas p a img {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: -2px;
+            margin-right: 7px; }
+        .detaols_sec2 .wrapper .rightbox .datas p a:hover {
+          opacity: 0.7; }
+        .detaols_sec2 .wrapper .rightbox .datas p span {
+          font-family: AvenirMedium;
+          font-weight: 500; }
+    .detaols_sec2 .wrapper .rightbox .dataswp {
+      margin-top: 11px; }
+      .detaols_sec2 .wrapper .rightbox .dataswp .showitc {
+        font-family: AvenirBlack;
+        color: #6F6F6F;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 16px;
+        letter-spacing: 0.6px;
+        position: relative;
+        padding-right: 20px; }
+        .detaols_sec2 .wrapper .rightbox .dataswp .showitc .rightarrow {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%); }
+      .detaols_sec2 .wrapper .rightbox .dataswp .cont {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        margin-top: 10px; }
+      .detaols_sec2 .wrapper .rightbox .dataswp p {
+        font-family: AvenirBlack;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 26px;
+        color: #6F6F6F;
+        margin: 0;
+        position: relative; }
+        .detaols_sec2 .wrapper .rightbox .dataswp p a {
+          position: absolute;
+          right: 0;
+          font-family: AvenirMedium;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 27px;
+          letter-spacing: 0.6px;
+          color: #0094B3;
+          padding: 0;
+          border: 0; }
+          .detaols_sec2 .wrapper .rightbox .dataswp p a img {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: -2px;
+            margin-right: 7px; }
+        .detaols_sec2 .wrapper .rightbox .dataswp p a:hover {
+          opacity: 0.7; }
+        .detaols_sec2 .wrapper .rightbox .dataswp p span {
+          font-family: AvenirMedium;
+          font-weight: 500; }
+    .detaols_sec2 .wrapper .rightbox .dataswp_active .cont {
+      display: block;
+      visibility: visible;
+      opacity: 1; }
+    .detaols_sec2 .wrapper .rightbox .dataswp_active .showitc .rightarrow {
+      transform: rotate(180deg);
+      margin-top: -6px; }
+      .detaols_sec2 .wrapper .rightbox .dataswp_active .showitc .rightarrow path {
+        fill: #0094B3 !important; }
+    .detaols_sec2 .wrapper .rightbox .placeforbtn {
+      border-top: 1px solid #C4C4C4;
+      margin-top: 36px;
+      padding-top: 21px; }
+      .detaols_sec2 .wrapper .rightbox .placeforbtn p {
+        font-family: AvenirRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        color: #6F6F6F; }
+      .detaols_sec2 .wrapper .rightbox .placeforbtn .btnc {
+        margin-top: 20px; }
+        .detaols_sec2 .wrapper .rightbox .placeforbtn .btnc a {
+          display: inline-block;
+          background: #0094B3;
+          border-radius: 4px;
+          line-height: 59px;
+          width: 100%;
+          font-family: AvenirBlack;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 15px;
+          text-align: center;
+          letter-spacing: 0.6px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          -webkit-transition: all .25s ease;
+          -moz-transition: all .25s ease;
+          -ms-transition: all .25s ease;
+          -o-transition: all .25s ease;
+          transition: all .25s ease; }
+        .detaols_sec2 .wrapper .rightbox .placeforbtn .btnc a:hover {
+          background: #1B4C67; }
+    .detaols_sec2 .wrapper .rightbox .downt {
+      position: absolute;
+      left: 45px;
+      right: 45px;
+      text-align: center;
+      bottom: -103px; }
+      .detaols_sec2 .wrapper .rightbox .downt p {
+        font-family: AvenirRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+        color: #6F6F6F; }
+        .detaols_sec2 .wrapper .rightbox .downt p span {
+          font-family: AvenirBlack;
+          font-style: normal;
+          font-weight: 900;
+          display: block; }
+        .detaols_sec2 .wrapper .rightbox .downt p a {
+          color: #6F6F6F;
+          border-bottom: 1px solid #0094B3;
+          padding-bottom: 3px; }
+        .detaols_sec2 .wrapper .rightbox .downt p a:hover {
+          color: #0094B3; }
+  .detaols_sec2 .wrapper h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 72px;
+    color: #535454;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-top: 5px; }
+  .detaols_sec2 .wrapper .tit2 {
+    font-weight: 600;
+    margin-bottom: 15px; }
+    .detaols_sec2 .wrapper .tit2 svg {
+      display: none; }
+  .detaols_sec2 .wrapper p {
+    font-family: AvenirRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 31px;
+    color: #6F6F6F;
+    margin-top: 4px; }
+    .detaols_sec2 .wrapper p a {
+      color: #6F6F6F;
+      border-bottom: 1px solid #0094B3;
+      padding-bottom: 5px; }
+    .detaols_sec2 .wrapper p a:hover {
+      color: #0094B3; }
+  .detaols_sec2 .wrapper .line1 {
+    width: 100%;
+    height: 1px;
+    background: #C4C4C4;
+    margin-bottom: 78px;
+    margin-top: 77px; }
+  .detaols_sec2 .wrapper .line2 {
+    width: 100%;
+    height: 1px;
+    background: #C4C4C4;
+    margin-bottom: 72px;
+    margin-top: 104px; }
+  .detaols_sec2 .wrapper .h1_v2 {
+    font-weight: 600;
+    letter-spacing: 0; }
+    .detaols_sec2 .wrapper .h1_v2 svg {
+      display: none; }
+  .detaols_sec2 .wrapper .boxes {
+    margin-top: 10px;
+    margin-top: 43px; }
+  .detaols_sec2 .wrapper .boxc {
+    border: 1px solid #C4C4C4;
+    border-radius: 6px;
+    margin-top: 13px;
+    padding: 35px 30px 37px 35px; }
+    .detaols_sec2 .wrapper .boxc h2 {
+      font-family: AvenirHeavy;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 28px;
+      line-height: 34px;
+      color: #535454; }
+    .detaols_sec2 .wrapper .boxc .list {
+      margin-top: 19px;
+      margin-bottom: 20px; }
+      .detaols_sec2 .wrapper .boxc .list p {
+        display: inline-block;
+        width: 100%;
+        max-width: 417px;
+        padding-left: 37px;
+        letter-spacing: 0.015em;
+        position: relative;
+        margin-bottom: 3px; }
+      .detaols_sec2 .wrapper .boxc .list p:before {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        left: 13px;
+        top: 11px;
+        border-radius: 100%;
+        background: #00A4C7; }
+
+.whyce {
+  margin-top: 4.25rem; }
+  .whyce .wrapper {
+    min-height: 614px;
+    max-width: 56rem;
+    padding-top: 6.8rem;
+    width: 100%;
+    margin: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 180px; }
+    .whyce .wrapper h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 80px;
+      line-height: 87px;
+      color: #47463D;
+      letter-spacing: -0.017em;
+      margin-bottom: 61px; }
+    .whyce .wrapper h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      color: #47463D;
+      margin-bottom: 20px;
+      margin-top: 60px; }
+      .whyce .wrapper h3 span {
+        display: block;
+        font-size: 18px;
+        font-weight: 500; }
+    .whyce .wrapper p {
+      font-family: AvenirRegular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 31px;
+      color: #6F6F6F; }
+      .whyce .wrapper p a {
+        color: #6F6F6F; }
+      .whyce .wrapper p .b {
+        font-weight: 600;
+        font-family: AvenirHeavy;
+        color: #47463D; }
+        .whyce .wrapper p .b a {
+          color: #47463D; }
+      .whyce .wrapper p .b2 {
+        font-weight: 600;
+        font-family: AvenirHeavy; }
+      .whyce .wrapper p .i {
+        font-style: italic; }
+    .whyce .wrapper .tt {
+      margin-top: 22px;
+      margin-bottom: 11px; }
+    .whyce .wrapper .l {
+      font-weight: 600;
+      font-family: AvenirHeavy;
+      padding-left: 30px;
+      position: relative;
+      color: #47463D; }
+    .whyce .wrapper .l:before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      left: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 100%;
+      background: #00A4C7; }
+    .whyce .wrapper .wimg {
+      padding-left: 268px;
+      position: relative;
+      margin-bottom: 36px; }
+    .whyce .wrapper .plforimg {
+      position: absolute;
+      left: 0;
+      top: 0; }
+      .whyce .wrapper .plforimg img {
+        box-shadow: 0px 11px 19px 3px rgba(0, 0, 0, 0.12);
+        display: block;
+        margin-bottom: 12px; }
+      .whyce .wrapper .plforimg h3 {
+        font-family: AvenirHeavy;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        color: #47463D; }
+        .whyce .wrapper .plforimg h3 span {
+          display: block;
+          font-size: 13px;
+          font-family: AvenirRegular; }

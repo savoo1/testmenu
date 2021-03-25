@@ -45,10 +45,12 @@ $('.navbar .forxicon1 .xicon').click(function(e) {
     $(".navbar .wrapper .navonphone").removeClass("navonphone_active");
  	 $(".links_active").removeClass("links_active");
     $(".navbar .wrapper .linkwd .dropdowns").removeClass("dropdowns_ac");
+    $("body").css("overflow", "auto");
 });
 $('.navbar .wrapper .hambmenu, .navbar .wrapper .searchicon').click(function(e) {
     e.preventDefault();
     $(".navbar .wrapper .navonphone").addClass("navonphone_active");
+    $("body").css("overflow", "hidden");
 });
 $('.navbar .forxicon2 .xicon').click(function(e) {
     e.preventDefault();
@@ -117,13 +119,18 @@ $('.browsepage .wrapper .filters .btnphone a').click(function(e) {
     $(".browsepage .wrapper .filters").removeClass("filters_active");
 });
 
+$('.browsepage .wrapper .filtersbefore').click(function(e) {
+    e.preventDefault();
+    $(".browsepage .wrapper .filters").removeClass("filters_active");
+});
+
 $('.browsepage .wrapper .filters .filterarea .checkboxa .container_checkbox').change(function(e) {
     if ($(this).find('input').is(':checked')) {
       var filtername = $(this).find(".t").html();
       var filterforclass = filtername.replace(/ /g,'').replace(/[^\w\s]/gi, '');
 
       var stringforc = "<p attr='"+filterforclass+"' class='"+filterforclass+"'>" + filtername + " <img src='img/xf.svg' class='xfc' alt=''></p>";
-      $(".browsepage .wrapper .filters .checkedfilters").append(stringforc);
+      $(this).parent().parent().parent().parent().parent().find(".checkedfilters").append(stringforc);
       $(this).addClass(filterforclass);
       iforfilter = parseInt($("h2 .forno").html()) + 1;
       $("h2 .forno").html(iforfilter);
@@ -174,6 +181,32 @@ $(document).on('click', function(event){
      }
 });
 
+
+$('.detaols_sec2 .wrapper .rightbox .dataswp .showitc').click(function(e) {
+    e.preventDefault();
+    if($(this).parent().hasClass("dataswp_active")){
+      $(this).parent().removeClass("dataswp_active");
+    }else{
+      $(this).parent().addClass("dataswp_active");
+    }
+});
+
+$('.detaols_sec2 .wrapper .tit2').click(function(e) {
+    e.preventDefault();
+    if($(this).parent().hasClass("tabonphone2_active")){
+      $(this).parent().removeClass("tabonphone2_active");
+    }else{
+      $(this).parent().addClass("tabonphone2_active");
+    }
+});
+$('.detaols_sec2 .wrapper .h1_v2').click(function(e) {
+    e.preventDefault();
+    if($(this).parent().hasClass("tabonphone2_active")){
+      $(this).parent().removeClass("tabonphone2_active");
+    }else{
+      $(this).parent().addClass("tabonphone2_active");
+    }
+});
 
 
 $( window ).resize(function() {
