@@ -986,35 +986,43 @@
     margin-left: 0; }
   .navbar .wrapper form *::-webkit-input-placeholder {
     /* Edge */
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-family: AvenirRoman;
     font-size: 16px;
     line-height: 18px;
-    color: #717171; }
+    color: #717171;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 45px; }
   .navbar .wrapper form *:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-family: AvenirRoman;
     font-size: 16px;
     line-height: 18px;
-    color: #717171; }
+    color: #717171;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 45px; }
   .navbar .wrapper form *::placeholder {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-family: AvenirRoman;
     font-size: 16px;
     line-height: 18px;
-    color: #717171; }
+    color: #717171;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 45px; }
   .navbar .wrapper form input {
     padding: 0.625rem;
     padding-right: 2rem;
     padding-left: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-family: AvenirRoman;
     font-size: 16px;
     line-height: 18px;
     color: #717171;
     box-shadow: none;
-    -webkit-appearance: none; }
+    -webkit-appearance: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 45px; }
   .navbar .wrapper form button {
     right: 25px; }
   .navbar .wrapper .linkwd .leftside a svg {
