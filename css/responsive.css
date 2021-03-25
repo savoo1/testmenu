@@ -985,12 +985,17 @@
   .navbar .wrapper .linkwd {
     margin-left: 0; }
   .navbar .wrapper form input {
+    padding: 14px;
     padding-right: 40px;
     padding-left: 20px;
     position: relative;
-    height: 48px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500; }
+    font-weight: 500;
+    line-height: unset;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none; }
   .navbar .wrapper form button {
     right: 25px; }
   .navbar .wrapper .linkwd .leftside a svg {
