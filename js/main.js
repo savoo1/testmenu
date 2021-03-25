@@ -45,14 +45,23 @@ $('.navbar .forxicon1 .xicon').click(function(e) {
     $(".navbar .wrapper .navonphone").removeClass("navonphone_active");
  	 $(".links_active").removeClass("links_active");
     $(".navbar .wrapper .linkwd .dropdowns").removeClass("dropdowns_ac");
-    $("body").css("overflow", "auto");
-    $("html").css("overflow", "auto");
+    var html = jQuery('html');
+    var scrollPosition = html.data('scroll-position');
+    html.css('overflow', html.data('previous-overflow'));
+    window.scrollTo(scrollPosition[0], scrollPosition[1])
 });
 $('.navbar .wrapper .hambmenu, .navbar .wrapper .searchicon').click(function(e) {
     e.preventDefault();
     $(".navbar .wrapper .navonphone").addClass("navonphone_active");
-    $("body").css("overflow", "hidden");
-    $("html").css("overflow", "auto");
+    var scrollPosition = [
+      self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
+      self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
+    ];
+    var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
+    html.data('scroll-position', scrollPosition);
+    html.data('previous-overflow', html.css('overflow'));
+    html.css('overflow', 'hidden');
+    window.scrollTo(scrollPosition[0], scrollPosition[1]);
 });
 $('.navbar .forxicon2 .xicon').click(function(e) {
     e.preventDefault();
