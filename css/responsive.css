@@ -992,7 +992,6 @@
     color: #717171;
     padding-top: 0;
     padding-bottom: 0;
-    line-height: 45px;
     -webkit-transform: translate(0); }
   .navbar .wrapper form *:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
@@ -1002,7 +1001,6 @@
     color: #717171;
     padding-top: 0;
     padding-bottom: 0;
-    line-height: 45px;
     -webkit-transform: translate(0); }
   .navbar .wrapper form *::placeholder {
     font-family: AvenirRoman;
@@ -1011,7 +1009,6 @@
     color: #717171;
     padding-top: 0;
     padding-bottom: 0;
-    line-height: 45px;
     -webkit-transform: translate(0); }
   .navbar .wrapper form input {
     padding: 0.625rem;
@@ -1022,10 +1019,7 @@
     line-height: 18px;
     color: #717171;
     box-shadow: none;
-    -webkit-appearance: none;
-    padding-top: 0;
-    padding-bottom: 0;
-    line-height: 45px; }
+    -webkit-appearance: none; }
   .navbar .wrapper form button {
     right: 25px; }
   .navbar .wrapper .linkwd .leftside a svg {
