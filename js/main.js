@@ -46,11 +46,13 @@ $('.navbar .forxicon1 .xicon').click(function(e) {
  	 $(".links_active").removeClass("links_active");
     $(".navbar .wrapper .linkwd .dropdowns").removeClass("dropdowns_ac");
     $("body").css("overflow", "auto");
+    $("html").css("overflow", "auto");
 });
 $('.navbar .wrapper .hambmenu, .navbar .wrapper .searchicon').click(function(e) {
     e.preventDefault();
     $(".navbar .wrapper .navonphone").addClass("navonphone_active");
     $("body").css("overflow", "hidden");
+    $("html").css("overflow", "auto");
 });
 $('.navbar .forxicon2 .xicon').click(function(e) {
     e.preventDefault();
