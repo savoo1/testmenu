@@ -1277,21 +1277,24 @@
 	}
 	.navbar .wrapper form{
 		*::-webkit-input-placeholder { /* Edge */
-		  font-family: AvenirRoman;
+		  font-family: 'Montserrat', sans-serif;
+		  font-weight: 500;
 		  font-size: 16px;
 		  line-height: 18px;
 		  color: #717171;
 		}
 
 		*:-ms-input-placeholder { /* Internet Explorer 10-11 */
-		  font-family: AvenirRoman;
+		  font-family: 'Montserrat', sans-serif;
+		  font-weight: 500;
 		  font-size: 16px;
 		  line-height: 18px;
 		  color: #717171;
 		}
 
 		*::placeholder {
-		  font-family: AvenirRoman;
+		  font-family: 'Montserrat', sans-serif;
+		  font-weight: 500;
 		  font-size: 16px;
 		  line-height: 18px;
 		  color: #717171;
@@ -1301,7 +1304,8 @@
 		padding: 0.625rem;
 		padding-right: 2rem;
 		padding-left: 1rem;
-		font-family: AvenirRoman;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
 		font-size: 16px;
 		line-height: 18px;
 		color: #717171;
